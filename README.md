@@ -5,10 +5,6 @@
   <a href="https://www.prisma.io/" target="blank"><img src="https://www.prisma.io/static/diagram-b275982bc40feafc0c3dfc388000c899.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
 ## Installation
 
 ```bash
