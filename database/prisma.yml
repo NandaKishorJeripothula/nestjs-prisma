@@ -1,0 +1,17 @@
+endpoint: http://3.94.105.2:4466/nestjs-prisma/dev
+datamodel: datamodel.prisma
+
+# This option is recommended by the Prisma for MongoDB
+databaseType: document
+
+# Download the GraphQL schema of the Prisma API into
+# `src/generated/prisma.graphql` (as specfied in `.graphqlconfig.yml`).
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
+    - graphql codegen --project database
+
+# This is optional
+generate:
+  - generator: typescript-client
+    output: ./generated/prisma-client/
