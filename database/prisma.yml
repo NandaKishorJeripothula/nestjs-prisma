@@ -9,6 +9,7 @@ databaseType: document
 hooks:
   post-deploy:
     - graphql get-schema --project database
+    # The following can be excluded since we are using NestJs gqlTool to generate schema dynamicallu from .graphql files
     - graphql codegen --project database
 
 # This is optional
